@@ -1,0 +1,41 @@
+---
+import { ThemeSwitch } from "astro-color-scheme";
+---
+
+
+		<nav class="grid grid-cols-2 md:grid-cols-4 px-[8%] items-center text-xl py-5">
+			<div class="">
+            <a class="text-xl md:text-2xl uppercase font-black" href="/">My Cute Kittens</a>
+        </div>
+            <div class="hidden md:justify-evenly md:col-span-2 md:flex">
+            <a href="/about">About</a>
+			<a href="/kittens">Kittens</a>
+            <a href="/resources">Resources</a>
+        </div>
+        <div class="flex justify-end items-center md:hidden">
+            <ThemeSwitch strategy="select" defaultTheme="system">
+                <select>
+                  <option value="system">System</option>
+                  <option value="dark">Dark</option>
+                  <option value="light">Light</option>
+                </select>
+              </ThemeSwitch>
+            <button class="ml-5">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
+        </div>
+        <div class="hidden md:flex md:items-center md:justify-end">
+			
+<div>
+    <ThemeSwitch strategy="select" defaultTheme="system">
+      <select>
+        <option value="system">System</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </ThemeSwitch>
+  </div>
+            <a class="ml-5 px-6 py-3 font-semibold rounded bg-[deeppink] text-white/90 " href="/contact">Contact</a>
+        </div>   
+            
+		</nav>
